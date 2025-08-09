@@ -1,14 +1,5 @@
-/**
- * fullPage 2.5.4
- * https://github.com/alvarotrigo/fullPage.js
- * MIT licensed
- *
- * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
- */
-
 (function($) {
 	$.fn.fullpage = function(options) {
-		// Create some defaults, extending them with any options that were provided
 		options = $.extend({
 			//navigation
 			'menu': false,
@@ -1624,11 +1615,7 @@
 			$("body").addClass("fp-viewing-" + text);
 		}
 
-		/**
-		* Checks for translate3d support
-		* @return boolean
-		* http://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
-		*/
+
 		function support3d() {
 			var el = document.createElement('p'),
 				has3d,
@@ -1711,11 +1698,6 @@
 			}
 		}
 
-
-		/*
-		* Returns and object with Microsoft pointers (for IE<11 and for IE >= 11)
-		* http://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
-		*/
 		function getMSPointer(){
 			var pointer;
 
@@ -1731,10 +1713,6 @@
 
 			return pointer;
 		}
-		/**
-		* Gets the pageX and pageY properties depending on the browser.
-		* https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
-		*/
 		function getEventsPage(e){
 			var events = new Array();
 
@@ -1859,13 +1837,6 @@
 			//scrolling the page to the top with no animation
 			$('html, body').scrollTop(0);
 		}
-
-		/*
-		* Sets the state for a variable with multiple states (original, and temporal)
-		* Some variables such as `autoScrolling` or `recordHistory` might change automatically its state when using `responsive` or `autoScrolling:false`.
-		* This function is used to keep track of both states, the original and the temporal one.
-		* If type is not 'internal', then we assume the user is globally changing the variable.
-		*/
 		function setVariableState(variable, value, type){
 			options[variable] = value;
 			if(type !== 'internal'){

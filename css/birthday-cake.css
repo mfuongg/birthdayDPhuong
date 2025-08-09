@@ -16,9 +16,6 @@ body {
   margin: -10em auto 0 auto;
 }
 
-/* ============================================== Candle
-*/
-
 .velas {
   background: #ffffff;
   border-radius: 10px;
@@ -58,8 +55,6 @@ body {
   left: 0;
 }
 
-/* ============================================== Fire
-*/
 .fuego {
   border-radius: 100%;
   position: absolute;
@@ -95,8 +90,6 @@ body {
   animation: fuego 0.2s 6.5s infinite;
 }
 
-/* ============================================== Animation Fire
-*/
 @-webkit-keyframes fuego {
   0%, 100% {
     background: rgba(254, 248, 97, 0.5);
